@@ -963,88 +963,6 @@ main > section header.custom h2 {
   text-decoration: underline;
 }
 
-#testimonial {
-  background-image: var(--bg-shape);
-  background-repeat: no-repeat;
-  background-position: 60vw 374px;
-  min-height: 100vh;
-}
-#testimonial .main-section .images {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  margin-top: 173px;
-  margin-bottom: 6px;
-}
-#testimonial .main-section .images img {
-  width: 68px;
-  height: 68px;
-  margin-right: 16px;
-  margin-left: 16px;
-  opacity: 0.5;
-  border-radius: 50%;
-  cursor: pointer;
-  margin-bottom: 16px;
-  transition: opacity 0.3s, filter 0.3s;
-}
-#testimonial .main-section .images img:hover {
-  opacity: 1;
-  filter: saturate(150%) sepia(0.5);
-}
-#testimonial .main-section .images img.active {
-  width: 90px;
-  height: 90px;
-  opacity: 1;
-}
-#testimonial .main-section .comments {
-  text-align: center;
-}
-#testimonial .main-section .comments .item {
-  display: none;
-}
-#testimonial .main-section .comments .item.active {
-  display: inline-block;
-}
-#testimonial .main-section .comments .item.active .box {
-  position: relative;
-  background: rgba(30, 30, 32, 0.75);
-  padding: 32px;
-  border-radius: 8px;
-}
-#testimonial .main-section .comments .item.active .box:before {
-  content: "";
-  position: absolute;
-  border-bottom: 9px solid rgba(30, 30, 32, 0.75);
-  border-left: 9px solid transparent;
-  border-right: 9px solid transparent;
-  top: -9px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-#testimonial .main-section .comments .item.active .box p {
-  font-family: "Inter", serif;
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 42px;
-  max-width: 710px;
-  animation: scaleUp 1s;
-}
-#testimonial .main-section .comments .item.active .box p span {
-  font-size: 86px;
-  color: #808185;
-  line-height: 0;
-  vertical-align: -33px;
-}
-#testimonial .main-section .comments .item.active .writer {
-  margin-top: 32px;
-  margin-bottom: 16px;
-  animation: scaleUp 1s;
-}
-#testimonial .main-section .comments .item.active .writer span.field {
-  color: #808185;
-}
-
 @keyframes scaleUp {
   0% {
     transform: scale(0) rotate(20deg);
@@ -1432,15 +1350,6 @@ html[theme=light] .modal#workModal .modal-dialog .modal-content .modal-body .lef
 }
 html[theme=light] .modal#workModal .modal-dialog .modal-content .modal-body .right .value {
   color: #83848E;
-}
-html[theme=light] #testimonial .main-section .comments .item .box {
-  background: rgba(244, 244, 248, 0.8);
-}
-html[theme=light] #testimonial .main-section .comments .item .box:before {
-  border-bottom-color: rgba(244, 244, 248, 0.8);
-}
-html[theme=light] #testimonial .writer span.field {
-  color: #83848E !important;
 }
 html[theme=light] #contact_me .container .form .form-item:before {
   background: #F4F4F8;
