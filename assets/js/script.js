@@ -78,21 +78,6 @@ workModalElement.addEventListener('hide.bs.modal', function (event) {
 })
 
 
-let testimonialImages = document.querySelectorAll('#testimonial .images img');
-
-testimonialImages.forEach((item, index) => {
-    let position = index + 1;
-
-    item.addEventListener('click', function () {
-        document.querySelector('#testimonial .images img.active').classList.remove('active')
-        document.querySelector(`#testimonial .images img:nth-child(${position})`).classList.add('active')
-
-        document.querySelector('#testimonial .comments .item.active').classList.remove('active')
-        document.querySelector(`#testimonial .comments .item:nth-child(${position})`).classList.add('active')
-    })
-})
-
-
 let contactFromItems = document.querySelectorAll('#contact_me .form input, #contact_me .form textarea');
 
 contactFromItems.forEach((item) => {
